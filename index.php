@@ -14,13 +14,13 @@
   LwIDAQAB";
 
   function checkPASETOSignature($token, $publicKey) {
-    $publicKey = new AsymmetricPublicKey($publicKey, new Version1);
-    try {
-      $decode = Version1::verify($token, $publicKey);
-      return json_decode($decode);
-    }
-    catch(Exception $err) {
-      return $err;
-    }
+      $publicKey = new AsymmetricPublicKey($publicKey, new Version1);
+      try {
+        $decode = Version1::verify($token, $publicKey);
+        return json_decode($decode);
+      }
+      catch(Exception $err) {
+        return $err;
+      }
   };
   print_r (checkPASETOSignature($signed, $publicKey));
