@@ -26,3 +26,4 @@
   LwIDAQAB";
 
   print_r (checkPASETOSignature($exampleToken, $examplePublicKey));
+  //it will return  [email] => hieu.do@sotatek.com
