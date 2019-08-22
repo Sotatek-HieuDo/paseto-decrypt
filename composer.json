@@ -1,0 +1,12 @@
+{
+    "name": "hieu/paseto",
+    "authors": [
+        {
+            "name": "Hieu Do",
+            "email": "hieu.do@sotatek.com"
+        }
+    ],
+    "require": {
+        "paragonie/paseto": "^1.0"
+    }
+}
